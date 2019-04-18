@@ -2,50 +2,26 @@
 <html>
 <head>
   <meta charset="utf-8">
-    <style> body {background-image: url(star.gif); background-size: cover;}</style>
+    <style> body {background-image: url(star.gif); background-size: cover; color: white; padding-top: 120px;} </style>
 
-   <script>
-   if ( confirm( "Est-ce que tu t'attend à un super jeu ?" ) ) {
-     if ( confirm( "C'est une mauvaise réponse... Connais tu Romoit ?" ) ) {
-       if ( confirm( "OUI OUI OUI OUI !!! Conais tu Romoit ?" ) ) {
-         if ( confirm( "Alors on commence le jeu ?" ) ) {
-           if ( confirm( "Situation 1 : " ) ) {
-             alert("OUI");
-            } else { alert("NON.");
-          }
-         } else {
-             alert("Et bah va chier.");
-         }
-       } else {
-         if ( confirm( "Dommage.. Il s'agit d'une version siamoise de Romain et Benoit dans le multivers Bugvers" ) ) {
-             alert("OUI");
-         } else {
-             alert("NON.");
-         }
-       }
-     }
+    <script>
+      function valider() {
+        if (document.getElementById("faux").checked) alert("C'est faux, t'es nul !");
+        else if (document.getElementById("pourquoipas").checked) alert("Ca aurais pu être vrai");
+        else if (document.getElementById("BADASS").checked) alert("OUAAAAAH GG !!!!");
+        else alert("Vous n'avez coché aucune couleur!");
+      }
+    </script>
+  </head>
 
-   } else {
-     if ( confirm( "OUI OUI OUI OUI !!! Conais tu Romoit ?" ) ) {
-       if ( confirm( "Alors on commence le jeu ?" ) ) {
-         if ( confirm( "Situation 1 : " ) ) {
-           alert("OUI");
-          } else { alert("NON.");
-        }
-       } else {
-           alert("Et bah va chier.");
-       }
-     } else {
-       if ( confirm( "Dommage.. Il s'agit d'une version siamoise de Romain et Benoit dans le multivers Bugvers" ) ) {
-           alert("OUI");
-       } else {
-           alert("NON.");
-       }
-     }
-   }
- </script>
-
- <body><br><br><br><br>
-   <center><input type="button" onclick='document.location.reload(false)' value="BRAVO, ON RECOMMENCE ?"/>
+  <center>
+  <body>
+    <p>Q1) Comment trouves tu le fond du site ? :</p>
+    <p><input type="radio" name="Q1" id="faux">Aussi bon que du Jul<br>
+    <input type="radio" name="Q1" id="pourquoipas">Américain ?<br>
+    <input type="radio" name="Q1" id="BADASS">Bah badass bien sur !</p>
+    <p><input type="button" value="OK" onclick="valider();"></p>
+  </center>
+   <center><input type="button" onclick='document.location.href="start2.html"' value="Tu veux vraiment continuer ?"("OUI");/>
    <br><br><input type="button" onclick='document.location.href="/jeu/index.html"' value="RETOUR CHOIX"/></center>
  </body>
