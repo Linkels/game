@@ -1,3 +1,4 @@
+/* Fonctions du drag and drop */
 function allowDrop(ev) {
   ev.preventDefault();
 }

@@ -4,30 +4,27 @@ body {
   background-image: url('https://thumbs.gfycat.com/CrazyFamousArthropods-size_restricted.gif');
   background-size: cover;
   height: 100vh;
+  color: white;
 }
 
-
+/* Style du bloque de vetement et de Romoit */
 #div1, #div2 {
   float: left;
   width: 150px;
   height: 100px;
   margin: 100px;
   padding: 100px;
- border: 1px solid black;
- background-color: white;
 }
 
+/* Bloque de Romoit */
 #div2 {
 background-image: url(bodyTEST.png);
 background-repeat:no-repeat;
 }
 
+/* Responsivité des 2 bloques */
 @media all and (max-width:1200px) {
   body {
     margin: 0;
   }
-}
-
-#blanc {
-  color: white;
 }
